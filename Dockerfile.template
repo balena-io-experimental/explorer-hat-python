@@ -7,8 +7,7 @@ ENV INITSYSTEM on
 RUN apt-get update \
 	&& apt-get install \
 		python-smbus \
-		python-pip \
-		curl
+		python-pip
 
 # Update pip
 RUN pip install -U setuptools
